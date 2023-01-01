@@ -61,7 +61,7 @@ export default class User {
 
 // console.log(newUser.showInfos());
 
-/* Por baixo da classe "User", temos a propriedade "prototype" que foi passada, através da cadeia de protótipo, para dentro do objeto "newUser", usando a sintaxe de classes. */
+/* Underneath the "User" class, we have the "prototype" property, which was passed, through the prototype chain, into the "newUser" object using class syntax. */
 
-/* Basicamente, o modelo de classes no JavaScript é um "syntax sugar" para o modelo de herança de protótipos, como o "bind()" e etc. */
+/* Basically, the class model in JavaScript is a "syntax sugar" for the prototype inheritance model, like "bind()" and so on. */
 // console.log(User.prototype.isPrototypeOf(newUser)); //true

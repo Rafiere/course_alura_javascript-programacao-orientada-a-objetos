@@ -1,5 +1,5 @@
 const user = {
-  /* O "init" é uma forma de "construtor" para um objeto literal. */
+  /* The "init" is a form of a "constructor" for an object literal. */
   init: function (name, email) {
     this.name = name;
     this.email = email;
@@ -10,10 +10,10 @@ const user = {
   },
 };
 
-/* Estamos passando o "user" como protótipo para o "newUser", porém, não estamos dependendo de uma função construtora para isso, e sim, estamos usando um objeto literal. */
+/* We are passing "user" as a prototype to "newUser", however, we are not relying on a constructor function for this, we are using an object literal. */
 const newUser = Object.create(user);
 
 console.log(newUser.showInfos());
-console.log(user.isPrototypeOf(newUser)); //true, pois o "user" é um protótipo para o "newUser".
+console.log(user.isPrototypeOf(newUser)); //true, because "user" is a prototype for "newUser".
 
-/* O "Object.create()" faz mais sentido utilizando os protótipos, enquanto que o "constructor" faz mais sentido no modelo de classes. */
+/* The "Object.create()" makes more sense using prototypes, while "constructor" makes more sense in the class model. */

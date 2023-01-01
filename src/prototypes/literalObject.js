@@ -10,15 +10,13 @@ const user = {
   },
 };
 
-/* Todas as vezes que atribuímos uma função em uma variável, a função perde o seu contexto. Se fizermos o "const show = user.showInfos", a função perderá a conexão com o objeto "show". Assim, o "this" retornará "undefined", pois ele não estará mais conectado com o objeto "user". */
-
-/* A palavra-chave "this" significa o contexto que está atrelado à essa palavra. */
+/* Every time we assign a function to a variable, the function loses its context. If we do the "const show = user.showInfos", the function will lose the connection with the "show" object. Thus, "this" will return "undefined", as it will no longer be connected with the "user" object. */
 
 user.showInfos();
 
-/* O método "bind" serve para prendermos a execução de uma função a um contexto específico, dessa forma, atrelaremos o contexto da constante "showUserInfos" ao objeto "user", e, assim, o "this" estará referenciado ao objeto "user". */
+/* The keyword "this" means the context that is attached to that keyword. */
 
-/* Quando atribuímos uma função à uma variável, não criamos uma referência para a função original, e sim realizamos uma cópia dela, assim, elas são funções diferentes e não interferem uma na outra. */
+/* When we assign a function to a variable, we do not create a reference to the original function, but we make a copy of it, so they are different functions and do not interfere with each other. */
 const showUserInfos = user.showInfos.bind(user);
 
 showUserInfos();

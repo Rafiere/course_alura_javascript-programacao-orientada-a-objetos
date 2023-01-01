@@ -1,5 +1,4 @@
 import User from "./User.js";
-import Teacher from "./Teacher.js";
 import Admin from "./Admin.js";
 
 const newUser = new User("Mariana", "m@m.com", "2021-01-01");

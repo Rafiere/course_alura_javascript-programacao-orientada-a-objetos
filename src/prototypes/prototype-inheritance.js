@@ -22,9 +22,9 @@ const admin = {
   },
 };
 
-/* Esse método serve para definir um protótipo. O primeiro objeto é o que vai herdar propriedades, e o segundo objeto é o que vai fornecer essas propriedades para serem herdadas. */
+/* This method serves to define a prototype. The first object is what will inherit properties, and the second object is what will provide those properties to be inherited. */
 Object.setPrototypeOf(admin, user);
 
-/* O "admin" herdou o método "showInfos" do "user". */
+/* The "admin" inherited method "showInfos()" from "user". */
 admin.createCourse();
 admin.showInfos();
