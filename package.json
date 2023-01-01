@@ -1,0 +1,20 @@
+{
+  "name": "javascript-programacao-orientada-a-objetos",
+  "version": "1.0.0",
+  "description": "Paradigms are approaches on how to solve programming problems, based on a theory or set of defined principles.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafiere/course_alura_javascript-programacao-orientada-a-objetos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafiere/course_alura_javascript-programacao-orientada-a-objetos/issues"
+  },
+  "homepage": "https://github.com/Rafiere/course_alura_javascript-programacao-orientada-a-objetos#readme"
+}
